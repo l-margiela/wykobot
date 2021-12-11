@@ -1,0 +1,14 @@
+[Unit]
+Description=wykobot
+After=syslog.target
+After=network.target
+
+[Service]
+Type=oneshot
+User=wykobot
+Group=wykobot
+StateDirectory=wykobot
+ExecStart=/usr/bin/wykobot -config /etc/wykobot/config.yaml -db ${STATE_DIRECTORY} -mode prod
+
+[Install]
+WantedBy=multi-user.target

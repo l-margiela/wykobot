@@ -1,0 +1,12 @@
+badger-dirpath: "./dedup" # Deduplication state directory
+telegram:
+  token: "super-secret"
+  channel: "channel-id"
+  message-delay: 0m1s # Delay between messages
+wykop:
+  userkey: "some-username"
+  max-page: 5 # The bot will fetch 5 pages of entries on each run
+  max-no-of-entries: 30 # The bot will send the maximum of 30 messages on each run
+  min-votes: 250 # Messages with less than 250 will be discarded
+  tag-blacklist:
+    - someTag # Entries with tag someTag will be discarded.
