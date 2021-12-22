@@ -1,4 +1,4 @@
-module github.com/xaxes/vikop-gorace
+module github.com/xaxes/wykobot
 
 go 1.17
 
